@@ -1,9 +1,9 @@
 @charset "UTF-8";
-/* ========== Home 10 : Hero Section Style ============= */
+
 @import url("https://fonts.cdnfonts.com/css/clash-display");
-/* ========== Home 10 : Process Section Style ============= */
+
 @import url("https://fonts.cdnfonts.com/css/clash-display");
-/*======= Base Class ========*/
+
 :root {
   --bs-primary:#3147FF;
   --bs-primary-rgb:49, 71, 255;
