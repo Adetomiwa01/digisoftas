@@ -1,4 +1,4 @@
-@use '../abstract' as *;
+@use "../abstract" as *;
 
 /* ========== Component : List Style  ============= */
 .list-style-check {
@@ -13,10 +13,10 @@
     column-gap: 12px;
     font-weight: 600;
     line-height: 1.67;
-    color: #0A102F;
+    color: #0a102f;
     font-size: 16px;
 
-    @media (min-width:576px) {
+    @media (min-width: 576px) {
       font-size: 18px;
     }
 
@@ -24,7 +24,7 @@
       max-width: 22px;
       max-height: 22px;
 
-      @media (min-width:576px) {
+      @media (min-width: 576px) {
         max-width: 34px;
         max-height: 34px;
       }
@@ -32,10 +32,9 @@
   }
 }
 
-
 .list-social {
   --color: #{$black};
-  --backgroundColor: #{rgba($black,.1)};
+  --backgroundColor: #{rgba($black, 0.1)};
   --hovBackground: #{$primary-hex};
   --hovColor: #{$white};
   display: inline-flex;
@@ -55,7 +54,7 @@
     background: var(--backgroundColor);
     // border: 1px solid var(--color);
     color: var(--color);
-    transition: .4s;
+    transition: 0.4s;
 
     &:hover {
       color: var(--hovColor);
@@ -65,7 +64,7 @@
   }
 
   &--dark {
-    --border-color: #{rgba($white,.1)};
+    --border-color: #{rgba($white, 0.1)};
     --color: #{$white};
     --hovBackground: #{$white};
     --hovColor: #{$black};
@@ -82,8 +81,8 @@
   }
 
   &--primary-l5 {
-    --backgroundColor: #{rgba(#FDFBF9,.1)};
-    --border-color: #{rgba($white,0)};
+    --backgroundColor: #{rgba(#fdfbf9, 0.1)};
+    --border-color: #{rgba($white, 0)};
     --color: #{$white};
     --hovBackground: #{$l5-primary-hex};
     --hovColor: #{$black-2};
@@ -91,21 +90,20 @@
 }
 
 .navigation-list {
-  .btn{
-    background-color: #0A102F0A;
+  .btn {
+    background-color: #0a102f0a;
     color: rgba(10, 16, 47, 0.6);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
-}
-    li{
-        &.active{
-           .btn{
-            color: #FFFF !important;
-           }
-
-        }
+  }
+  li {
+    &.active {
+      .btn {
+        color: #ffff !important;
+      }
     }
+  }
   &--inline {
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +113,7 @@
 
     li {
       &.active {
-        background-color: #3147FF;
+        background-color: #f1d126;
         color: #fff;
         border-radius: 500px;
       }
@@ -126,7 +124,7 @@
     }
 
     .nav-list-btn-2 {
-      background-color: #0A102F0A;
+      background-color: #0a102f0a;
       color: #fff;
     }
   }
@@ -139,7 +137,6 @@
     margin-bottom: 40px;
     justify-content: center;
 
-
     @media (min-width: 1200px) {
       flex-direction: column;
       margin-bottom: 0;
@@ -148,7 +145,7 @@
     li {
       &.active {
         .nav-list-btn {
-          color: #3147FF;
+          color: #f1d126;
         }
       }
 
@@ -170,8 +167,6 @@
         }
       }
     }
-
-
   }
 }
 
@@ -180,36 +175,35 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  &-item{
-      a{
-          padding: 4.5px 23px;
-          border-radius: 500px;
-          background: rgba(10, 16, 47, 0.04);
-          font-size: 18px;
-          line-height: 1.43;
-          color: rgba(#0A102F, 0.8);
-          transition: .4s;
-          &:hover{
-              background-color: $primary;
-              color: #FFF;
-          }
+  &-item {
+    a {
+      padding: 4.5px 23px;
+      border-radius: 500px;
+      background: rgba(10, 16, 47, 0.04);
+      font-size: 18px;
+      line-height: 1.43;
+      color: rgba(#0a102f, 0.8);
+      transition: 0.4s;
+      &:hover {
+        background-color: $primary;
+        color: #fff;
       }
+    }
   }
 }
-
 
 .sidebar-category-list {
   display: flex;
   flex-direction: column;
   // row-gap: 28px;
-  >*{
-      padding-top: 14px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid rgba(#0A102F, 0.1);
-      
-      &:last-child{
-          border-bottom:  0px solid rgba(#0A102F, 0.1);
-          padding-bottom: 0px;
-      }
+  > * {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(#0a102f, 0.1);
+
+    &:last-child {
+      border-bottom: 0px solid rgba(#0a102f, 0.1);
+      padding-bottom: 0px;
+    }
   }
 }

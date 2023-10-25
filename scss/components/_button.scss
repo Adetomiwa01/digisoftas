@@ -6,10 +6,10 @@
   --btn-spacing-y: 18px;
   --btn-spacing-x: 42px;
   --btn-radius: 3px;
-  --btn-bg: #3147FF;
+  --btn-bg: #f1d126;
   --btn-color: #fff;
   --btn-border-width: 1px;
-  --btn-border-color: #3147FF;
+  --btn-border-color: #f1d126;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,9 @@
   color: var(--btn-color);
   transition: all 0.3s;
 
-  &:not(.btn-fill--up):not(.btn-fill--down):not(.btn-fill--slide):not(.btn-fill--slide-reverse):not(.btn-fill--slide-left):not(.btn-shadow):not(.btn-shadow--reverse) {
+  &:not(.btn-fill--up):not(.btn-fill--down):not(.btn-fill--slide):not(
+      .btn-fill--slide-reverse
+    ):not(.btn-fill--slide-left):not(.btn-shadow):not(.btn-shadow--reverse) {
     transition: all 0.3s ease-in-out;
 
     &:hover {
@@ -63,8 +65,8 @@
     border-radius: 500px;
 
     &::after {
-      content: '\f04b';
-      font-family: 'Font Awesome 6 Free';
+      content: "\f04b";
+      font-family: "Font Awesome 6 Free";
       font-weight: 900;
       font-size: 7px;
       color: #fff;
@@ -76,16 +78,14 @@
   }
 }
 
-
 .btn-link {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #0A102F;
-  transition: .3s;
+  color: #0a102f;
+  transition: 0.3s;
   text-decoration: none;
 }
-
 
 .btn-arrow {
   display: inline-flex;
@@ -105,19 +105,17 @@
     position: relative;
     top: 1px;
     left: 0px;
-    transition: .4s left;
+    transition: 0.4s left;
     color: inherit;
   }
 }
-
-
 
 /* ---------- Button Shadow ---------- */
 
 .btn-shadow {
   z-index: 1;
-  --btn-shadow-bg: #0A102F;
-  --btn-shadow-border-color: #0A102F;
+  --btn-shadow-bg: #0a102f;
+  --btn-shadow-border-color: #0a102f;
   --btn-shadow-border-width: 1px;
 
   &::before {
@@ -133,7 +131,7 @@
     border-width: var(--btn-shadow-border-width);
     border-style: solid;
     border-color: var(--btn-shadow-border-color);
-    transition: .4s;
+    transition: 0.4s;
   }
 
   &:hover {
@@ -181,7 +179,6 @@
         }
       }
     }
-
   }
 }
 
@@ -190,7 +187,7 @@
 .btn-fill--up {
   --btn-fill-bg: #fff;
   --btn-fill-color: $black;
-  --btn-fill-border-color: #3147FF;
+  --btn-fill-border-color: #f1d126;
   overflow: hidden;
 
   @keyframes fill-up-initial {
@@ -250,7 +247,8 @@
     content: "";
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1), -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+    transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1),
+      -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
   }
 
   &:hover {
@@ -261,7 +259,8 @@
     &::before {
       -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
       transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-      transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1), -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+      transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1),
+        -webkit-transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
     }
 
     &::after {
@@ -297,7 +296,8 @@
     content: "";
     -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1), -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1),
+      -webkit-transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
     -webkit-transform: skew(30deg);
     -ms-transform: skew(30deg);
     transform: skew(30deg);
@@ -410,7 +410,8 @@
     content: "";
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
     transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
-    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1),
+      -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
   }
 
   &:hover {
@@ -418,12 +419,15 @@
     background-color: var(--btn-bg);
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
     transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
-    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1),
+      -webkit-transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 
-    &>span {
-      &>span {
-        -webkit-animation: slide-left-initial 0.2s forwards, slide-left-end 0.2s forwards 0.2s;
-        animation: slide-left-initial 0.2s forwards, slide-left-end 0.2s forwards 0.2s;
+    & > span {
+      & > span {
+        -webkit-animation: slide-left-initial 0.2s forwards,
+          slide-left-end 0.2s forwards 0.2s;
+        animation: slide-left-initial 0.2s forwards,
+          slide-left-end 0.2s forwards 0.2s;
       }
     }
 
@@ -438,26 +442,23 @@
   }
 }
 
-@each $key,
-$value in $button-variation {
-  $hover : map-get($value, "hover");
-  $shadow : map-get($value, "shadow");
-  $fill : map-get($value, "fill");
+@each $key, $value in $button-variation {
+  $hover: map-get($value, "hover");
+  $shadow: map-get($value, "shadow");
+  $fill: map-get($value, "fill");
 
   .btn-#{$key} {
-    --btn-bg: #{map-get($value , "background" )};
-    --btn-color: #{map-get($value , "color" )};
+    --btn-bg: #{map-get($value, "background")};
+    --btn-color: #{map-get($value, "color")};
 
     @if map-get($value, "border-width") {
-      --btn-border-width:#{map-get($value,"border-width")};
+      --btn-border-width: #{map-get($value, "border-width")};
     }
 
     @if map-get($value, "border-color") {
-      --btn-border-color:#{map-get($value,"border-color")};
-    }
-
-    @else {
-      --btn-border-color:#{map-get($value,"background")};
+      --btn-border-color: #{map-get($value, "border-color")};
+    } @else {
+      --btn-border-color: #{map-get($value, "background")};
     }
 
     @if $hover {
@@ -468,45 +469,35 @@ $value in $button-variation {
 
     @if $shadow {
       @if map-get($shadow, "shadow-bg") {
-        --btn-shadow-bg:#{map-get($shadow,"shadow-bg")};
-      }
-
-      @else {
-        --btn-shadow-bg:#{map-get($value,"background")};
+        --btn-shadow-bg: #{map-get($shadow, "shadow-bg")};
+      } @else {
+        --btn-shadow-bg: #{map-get($value, "background")};
       }
 
       @if map-get($shadow, "shadow-border") {
-        --btn-shadow-border-color:#{map-get($shadow,"shadow-border")};
-      }
-
-      @else {
-        --btn-shadow-border-color:#{map-get($value,"background")};
+        --btn-shadow-border-color: #{map-get($shadow, "shadow-border")};
+      } @else {
+        --btn-shadow-border-color: #{map-get($value, "background")};
       }
     }
 
     @if $fill {
       @if map-get($fill, "fill-bg") {
-        --btn-fill-bg:#{map-get($fill,"fill-bg")};
-      }
-
-      @else {
+        --btn-fill-bg: #{map-get($fill, "fill-bg")};
+      } @else {
         --btn-fill-bg: #fff;
       }
 
       @if map-get($fill, "fill-color") {
-        --btn-fill-color:#{map-get($fill,"fill-color")};
-      }
-
-      @else {
+        --btn-fill-color: #{map-get($fill, "fill-color")};
+      } @else {
         --btn-fill-color: $black;
       }
 
       @if map-get($fill, "fill-border") {
-        --btn-fill-border-color:#{map-get($fill,"fill-border")};
-      }
-
-      @else {
-        --btn-fill-border-color:#{map-get($value,"background")};
+        --btn-fill-border-color: #{map-get($fill, "fill-border")};
+      } @else {
+        --btn-fill-border-color: #{map-get($value, "background")};
       }
     }
   }
@@ -518,16 +509,9 @@ $value in $button-variation {
   --btn-radius: 500px;
 }
 
-
 .btn-padding-x-33 {
   --btn-spacing-x: 33px;
 }
-
-
-
-
-
-
 
 .btn-play {
   display: flex;
@@ -538,24 +522,24 @@ $value in $button-variation {
   @include square(50px, 500px);
   font-size: 16px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     @include square(70px, 500px);
     font-size: 20px;
   }
 
-  @media (min-width:992px) {
+  @media (min-width: 992px) {
     @include square(80px, 500px);
     font-size: 24px;
   }
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     @include square(100px, 500px);
     font-size: 24px;
   }
 
   i {
     transform: scale(1);
-    transition: .4s;
+    transition: 0.4s;
   }
 
   &:hover {
@@ -569,26 +553,25 @@ $value in $button-variation {
     border: 3px solid $white;
     color: $white;
   }
-  
 }
-.btn-play--black{
+.btn-play--black {
   background: #121212;
-  color: #C1FF00;
+  color: #c1ff00;
 }
-.btn-play--green{
-  background: #C1FF00;
+.btn-play--green {
+  background: #c1ff00;
   color: #121212;
 }
-.btn-play--blue{
-  background: #2D2B92;
-  color: #FFD874;
+.btn-play--blue {
+  background: #2d2b92;
+  color: #ffd874;
 }
 .btn-play--80 {
   border-radius: 500px;
   @include size(60px);
   font-size: 17px;
 
-  @media (min-width:992px) {
+  @media (min-width: 992px) {
     @include size(80px);
     font-size: 18px;
   }
@@ -599,7 +582,7 @@ $value in $button-variation {
   @include size(50px);
   font-size: 15px;
 
-  @media (min-width:992px) {
+  @media (min-width: 992px) {
     @include size(70px);
     font-size: 17px;
   }
@@ -614,24 +597,24 @@ $value in $button-variation {
   @include square(60px, 500px);
   font-size: 18px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     @include square(80px, 500px);
     font-size: 22px;
   }
 
-  @media (min-width:992px) {
+  @media (min-width: 992px) {
     @include square(100px, 500px);
     font-size: 24px;
   }
 
-  @media (min-width:1200px) {
+  @media (min-width: 1200px) {
     @include square(120px, 500px);
     font-size: 30px;
   }
 
   i {
     transform: scale(1);
-    transition: .4s;
+    transition: 0.4s;
   }
 
   &:hover {

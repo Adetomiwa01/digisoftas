@@ -1,7 +1,7 @@
-@use '../../abstract' as *;
+@use "../../abstract" as *;
 
 /* ========== Component : process Card Style ============= */
-.process-card{
+.process-card {
   padding: 30px;
   display: flex;
   border-radius: 5px;
@@ -27,7 +27,7 @@
   }
 
   &:hover &__icon {
-    color: #3147FF;
+    color: #f1d126;
   }
 
   p {
@@ -36,32 +36,30 @@
     opacity: 0.8;
   }
   &__heading {
-      @include heading-30;
-      margin-bottom: 16px;
+    @include heading-30;
+    margin-bottom: 16px;
+  }
+
+  &__step {
+    display: inline-block;
+    @include heading-24;
+    color: #bef8fc;
+    position: relative;
+    margin-bottom: 20px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 34px;
     }
-  
-    &__step {
-      display: inline-block;
-      @include heading-24;
-      color: #BEF8FC;
-      position: relative;
-      margin-bottom: 20px;
-  
-      @media (min-width: 992px) {
-        margin-bottom: 34px;
-      }
-  
-  
-      &::after {
-        content: "";
-        position: absolute;
-        height: 3px;
-        width: 100%;
-        background: #BEF8FC;
-        bottom: -4px;
-        left: 0;
-        border-radius: 500px;
-      }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: #bef8fc;
+      bottom: -4px;
+      left: 0;
+      border-radius: 500px;
     }
+  }
 }
-  
