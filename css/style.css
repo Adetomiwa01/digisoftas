@@ -7038,10 +7038,10 @@ div#loading img {
   --btn-color: #FFFFFF;
   --btn-border-width:2px;
   --btn-border-color:#191919;
-  --btn-hover-bg: #A259FF;
+  --btn-hover-bg: #F1D126;
   --btn-hover-color: #FFFFFF;
-  --btn-hover-border-color: #A259FF;
-  --btn-shadow-bg:#A259FF;
+  --btn-hover-border-color: #F1D126;
+  --btn-shadow-bg:#F1D126;
   --btn-shadow-border-color:#191919;
 }
 
