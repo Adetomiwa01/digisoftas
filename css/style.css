@@ -1488,6 +1488,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   color: var(--body-color);
   margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #F1D126;
 }
 @media (min-width: 768px) {
   .feature-card-3__title {
@@ -1503,11 +1505,10 @@ h1, h2, h3, h4, h5, h6 {
   .feature-card-3:hover {
     transform: rotate(-3deg);
     background-color: #fff;
-  }
+    border: 2px solid #F1D126;
+}
 }
 
-/* ========== Component : Feature Card 5 Style ============= */
-/* ========== Component : process Card Style ============= */
 .process-card {
   padding: 30px;
   display: flex;
