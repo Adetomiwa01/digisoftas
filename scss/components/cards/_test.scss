@@ -80,7 +80,7 @@
     &__head{
         padding-bottom: 25px;
         margin-bottom: 30px;
-        border-bottom: 1px solid rgba(#1B1C1D, 0.1);
+        border-bottom: 1px solid rgba(#0A102F, 0.1);
     }
     &__icon{
         margin-bottom: 30px;
@@ -95,7 +95,7 @@
         font-weight: 600;
         font-size: 30px;
         line-height: 1.18;
-        color: #1B1C1D;
+        color: #0A102F;
         letter-spacing: -3px;
         font-family: $font-family-heading;
         @media (min-width:768px) {
@@ -116,7 +116,7 @@
         font-size: 18px;
         line-height: 1.67;
         font-family: 'Inter', sans-serif;
-        color: rgba(#1B1C1D,0.8);
+        color: rgba(#0A102F,0.8);
     }
     p{
         font-weight: 400;
@@ -142,7 +142,7 @@
             font-weight: 600;
             font-size: 18px;
             line-height: 1.67;
-            color: rgba(#1B1C1D, 0.8);
+            color: rgba(#0A102F, 0.8);
         }
     }
 }
